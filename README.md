@@ -1,2 +1,2 @@
 # programas-cpp
-Códigos da disciplina de programação em C++
+Códigos da disciplina de programação em C
