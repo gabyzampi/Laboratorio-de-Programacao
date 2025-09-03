@@ -7,12 +7,15 @@
 int main(void){
     char frase[50];
 
-    printf("Digite uma frase:");
+    printf("Digite uma frase:\n");
     fgets(frase, sizeof(frase), stdin);
     int tamanho = strlen(frase);
 
+    printf("Frase Inversa: ");
     for (tamanho = strlen(frase)-1; tamanho >= 0; tamanho--) {
-        printf("%c\n", frase [tamanho]);
+        printf("%c", frase[tamanho]);
+    }
+    printf("\n");
 
 
 //16 Usando vetores de vetores (matriz), estruture e apresente um tabuleiro de xadrez.
@@ -25,9 +28,9 @@ int main(void){
     for (i = 0; i < 8; i++) {
         for ( j = 0; j < 8; j++) {
             if ((i + j) % 2 == 0)
-                tabuleiro[i][j] = 'B'; // casa branca
+                tabuleiro[i][j] = ' '; // casa branca
             else
-                tabuleiro[i][j] = 'P'; // casa preta
+                tabuleiro[i][j] = '#'; // casa preta
         }
     }
 
@@ -41,4 +44,4 @@ int main(void){
 
     return 0;
 }
-}
+
