@@ -11,4 +11,18 @@ void funcaoRidicula(int vetor[10], int valor) {
     for (i = 0; i < 10; i++) {
         vetor[i] = valor;
     }
-}   
+}
+
+int main(){
+    int vetor[10];
+    int i, valor;
+    printf("Insira um numero inteiro para preencher o vetor:\n");
+    scanf("%d", &valor);
+    funcaoRidicula(vetor, valor);
+    printf("O vetor preenchido e:\n");
+    for (i = 0; i < 10; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
+    return 0;
+}
